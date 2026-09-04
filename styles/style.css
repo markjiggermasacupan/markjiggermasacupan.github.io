@@ -154,17 +154,17 @@ main {
 
 .intro {
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  min-height: 38rem;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  text-align: center;
-  padding-top: 8.75rem;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  min-height: calc(100vh - 3.75rem);
+  padding-bottom: 4rem;
+  padding-top: 5.5rem;
+  text-align: left;
 }
 
 .intro-copy {
+  grid-column: 2;
   max-width: 38rem;
   width: 100%;
 }
@@ -219,9 +219,10 @@ h2 {
 }
 
 .intro-visual {
+  grid-column: 1;
+  grid-row: 1;
   justify-self: center;
   text-align: center;
-  order: -1;
 }
 
 .photo-frame {
@@ -501,14 +502,17 @@ footer {
   }
 
   .intro {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    min-height: auto;
     padding-bottom: 3rem;
-    padding-top: 3rem;
-    text-align: center;
     padding-top: 6rem;
+    text-align: center;
   }
 
   .intro-copy {
+    grid-column: auto;
     max-width: none;
     width: 100%;
   }
