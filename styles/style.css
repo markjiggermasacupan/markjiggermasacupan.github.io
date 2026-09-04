@@ -53,8 +53,7 @@ a {
 }
 
 .navigation,
-main,
-footer {
+main {
   margin: 0 auto;
   max-width: 960px;
   padding-left: 1.5rem;
@@ -412,6 +411,8 @@ footer {
   border-top: 1px solid var(--line);
   color: white;
   padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 2rem;
 }
 
@@ -419,6 +420,8 @@ footer {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .footer-content p {
@@ -445,6 +448,13 @@ footer {
   display: inline-flex;
   font-weight: 700;
   gap: 0.4rem;
+  text-decoration: none;
+}
+
+.footer-connect a:hover,
+.footer-connect a:focus-visible {
+  color: #f5c45f;
+  text-decoration: none;
 }
 
 @media (max-width: 640px) {
